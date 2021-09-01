@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Repaso </title>
+	<style>
+	.fondo{
+		position: absolute;
+		font-family: car;
+		font-size: 300%;
+		top: 5%;
+		left: 30%;
+		width: 64%;
+		height: 90%;
+		background: purple;
+
+	}
+	.boton1{
+		position: absolute;
+		font-family: car;
+		top: 10%;
+		left: 5%;
+		width: 20%;
+		height: 40%;
+		border: black 3px solid;
+		background: pink;
+	}
+	.boton2{
+		position: absolute;
+		font-family: car;
+		top: 55%;
+		left: 5%;
+		width: 20%;
+		height: 40%;
+		border: black 3px solid;
+		background: pink;
+	}
+	.info{
+		position: absolute;
+		font-family: car;
+		font-size: 300%;
+		top: 5%;
+		left: 30%;
+		width: 64%;
+		height: 0%;
+		background: greenyellow;
+		transition: 2s all;
+	}
+
+	.info1{
+		position: absolute;
+		font-family: car;
+		font-size: 300%;
+		top: 5%;
+		left: 30%;
+		width: 64%;
+		height: 0%;
+		background: blue;
+		transition: 2s all;
+	}
+
+	.cer{
+		position: absolute;
+		font-family: car;
+		top: 84%;
+		left: 84%;
+		width: 10%;
+		height: 0%;
+		background: red;
+		transition: all 1s 1s;
+		transition:  2s all;
+	}
+
+		@font-face{
+	font-family: car;
+	src: url(vee.otf);
+}
+	</style>
+	
+</head>
+<body>
+	<div class="fondo">...Bienvenido...</div>
+	<div class="boton1" onclick="boton()"></div>
+	<div class="boton2" onclick="botonn()"></div>
+	<div class="info" id="a"></div>
+	<div class="info1" id="aa"></div>
+	<div class="cer" id="aaa" onclick="cerr()"> </div>
+	
+
+
+
+	<script>
+		function boton() {
+			a.style.height=90+"%";
+			aa.style.height=0+"%";
+			a.innerHTML="BUENAS";
+			aa.innerHTML=" ";
+			aaa.style.height=10+"%";
+			aaa.innerHTML="cerrar";
+		}
+		function botonn() {
+			aa.style.height=90+"%";
+			a.style.height=0+"%";
+			aa.innerHTML="COMO ESTAS?";
+			a.innerHTML=" ";
+			aaa.style.height=10+"%";
+			aaa.innerHTML="cerrar";
+		}
+		function cerr(){
+			aa.style.height=0+"%";
+			a.innerHTML=" ";
+			a.style.height=0+"%";
+			aa.innerHTML=" ";
+			aaa.style.height=0+"%";
+			aaa.innerHTML=" ";
+		}
+	
+	</script>
+
+</body>
+</html>
